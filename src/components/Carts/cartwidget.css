@@ -1,0 +1,11 @@
+.cartwidget-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(191, 253, 183);
+    position: relative;
+    cursor: pointer;
+}
