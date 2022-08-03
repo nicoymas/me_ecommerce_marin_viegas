@@ -1,0 +1,43 @@
+
+
+.btn-increment {
+    width: 50px;
+    height: 50px;
+    transform: translate(400%, -215%);
+    outline: none;
+    border-style: none;
+    font-size: 20px;
+    background-color: rgb(11, 150, 103);
+    box-shadow: 8px 8px 8px rgb(8, 77, 54), -8px -8px 20px rgb(168, 228, 208);
+}
+.btn-decrement{
+    width: 50px;
+    height: 50px;
+    transform: translate(100%, -10%);
+    outline: none;
+    border-style: none;
+    font-size: 20px;
+    background-color: rgb(11, 150, 103);
+    color:rgb(0, 0, 0);
+    border-color: rgb(80, 194, 160) ;
+    box-shadow: 8px 8px 8px rgb(8, 77, 54), -8px -8px 20px rgb(168, 228, 208);
+}
+
+.btn-onAdd{
+    width: 50%;
+    top:50%;
+    left: 50px 0;
+    transform: translate(25%, -30%);
+    padding: 5%;
+    outline: none;
+    border-style: inset;
+    font-size: 15px;
+    background-color: rgb(93, 233, 156);
+    color:rgb(0, 0, 0);
+    border-color: rgb(80, 194, 160) ;
+    box-shadow: 8px 8px 8px rgb(8, 77, 54), -8px -8px 20px rgb(137, 206, 183);
+}
+
+.text-center{
+    transform: translate(48%, -110%);
+}
