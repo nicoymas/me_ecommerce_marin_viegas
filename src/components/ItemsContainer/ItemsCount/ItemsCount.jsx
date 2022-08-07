@@ -2,8 +2,8 @@ import React ,{useState} from "react";
 import "./ItemsCount.css";
 
 function ItemCount(props) {
-  console.log(props.stock, props.initial); /* Valor máximo del contador */
-
+  
+  
   const [cantidad , setCantidad] = useState(1); /* hook de estado */
 
   const handleIncrement = () => {
@@ -19,7 +19,7 @@ function ItemCount(props) {
   const onAdd = () => {
     alert(`Agregaste ${cantidad} unidades de ${props.data}`);
   };
-  console.log(props)
+  
   return (
     <>
         
