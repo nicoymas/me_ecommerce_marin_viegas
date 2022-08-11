@@ -1,0 +1,117 @@
+.container-detail {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: #0cb40c solid 0.7px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .d-img {
+    width: 35%;
+    height: auto;
+    border-right: #CECDCD solid 0.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .d-det {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .d-det h2 {
+    margin: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: right;
+    width: 70%;
+  }
+  
+  .d-det h3 {
+    margin-bottom: 18px;
+    color: red;
+    font-weight: 500;
+    text-align: right;
+    width: 60%;
+    font-size: 24px;
+  }
+  
+  .d-det p {
+    text-align: justify;
+    width: 90%;
+    border-top: #CECDCD solid 0.7px;
+    padding: 5px;
+    padding-top: 15px;
+  }
+  
+  .detail-img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  
+  .container-bying {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .terminar-compra {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    margin: 30px;
+    font-size: 18px;
+  }
+  
+  .terminar-compra:hover {
+    background-color: #E74C2B;
+    transition: 1s;
+  }
+  
+  .gray-detls {
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #5F5958;
+    font-size: var(--tamaño-letra-medio);
+  }
+  
+  .gray-detls {
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #5F5958;
+    font-size: var(--tamaño-letra-medio);
+  }
+  
+  .gray-detls-p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #5F5958;
+    font-size: 18px;
+    font-size: var(--tamaño-letra-chico);
+  }
+  
+  p {
+    font-size: var(--tamaño-letra-chico);
+    text-align: justify;
+  }

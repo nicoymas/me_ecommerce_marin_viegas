@@ -9,9 +9,9 @@ function Items({name, description, precio, img, stock}) {
           <img src={img} alt="imagen" />
         </div>
         <div className="card-detail">
-          <h4>{name}</h4>
+          <h5>{name}</h5>
           <p>{description}</p>
-          <h4>$ {precio}</h4>
+          <h5>$ {precio}</h5>
           
         </div>
         <ItemCount stock ={stock} initial={1} data={name}/>  
