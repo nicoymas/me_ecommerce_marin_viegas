@@ -1,20 +1,21 @@
 import React from "react";
 import "./Items.css";
-import ItemCount from "../ItemsCount/ItemsCount.jsx";
-
-function Items({name, description, precio, img, stock}) {
-    return (
+import{Link} from "react-router-dom";
+function Items({id, items}) {
+  
+  return (
       <div className="card">
         <div className="card-img">
-          <img src={img} alt="imagen" />
+          <img src={items.img} alt="imagen" />
         </div>
         <div className="card-detail">
-          <h5>{name}</h5>
-          <p>{description}</p>
-          <h5>$ {precio}</h5>
+          <h5>{items.name}</h5>
+          <p className="description">{items.description}</p>
+          <h5>$ {items.precio}</h5>
           
         </div>
-        <ItemCount stock ={stock} initial={1} data={name}/>  
+        <Link className="vermas" to={`/item/${id}`}>ver mas</Link>
+          
       </div>
     );
 }

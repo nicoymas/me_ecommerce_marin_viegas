@@ -3,7 +3,7 @@ import "./ItemsDetail.css";
 import ItemCount from "../ItemsContainer/ItemsCount/ItemsCount.jsx";
 
 function ItemsDetail({name, description, precio, img, stock}) {
-    console.log(name)
+    
     return (
     <div>    
         <div className="container-detail">

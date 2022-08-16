@@ -26,3 +26,20 @@
     padding: 26px 30px;
     text-size-adjust: 10%;
 }
+
+.vermas{
+    display: block;
+    width: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(27, 61, 50);
+    background-color: rgb(175, 228, 211);
+}
+.description{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}

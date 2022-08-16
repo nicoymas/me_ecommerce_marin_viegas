@@ -2,28 +2,30 @@
 import React, { useEffect, useState } from "react";
 import ItemsDetail from "./ItemsDetail.jsx";
 import DataPlantas from "../data/Data.jsx";
+import {useParams} from "react-router-dom";
 
 
-function GetPlantasDetail (){
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(DataPlantas[3]);
-    }, 1500);
-  })
-} 
 
 function ItemsDetailContainers() {
+  const {id} = useParams()
   const [data, setData] = useState([]);
-
-  useEffect(() => {
-    GetPlantasDetail().then((detail) =>{
-      setData(detail);
-    });
-  },[]);
+  console.log(id)
+  function GetPlantasDetail (){
+    return new Promise((resolve) => {
+      let ItemRecuest= DataPlantas.find(item => item.id === id);
+      resolve(ItemRecuest);
+    })
+  } 
   
-  console.log(data)
+  useEffect(() => {
+    GetPlantasDetail()
+    .then((detail) =>{setData(detail)})
+    .catch((error) =>{alert(error)});
+  },);
+  
+
   return (
-    <div >
+    <div>
       <ItemsDetail 
         key={data.id}
         name={data.name}
