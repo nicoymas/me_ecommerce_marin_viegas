@@ -5,7 +5,7 @@ import ItemsListContainers from './components/ItemsContainer/ItemsListContainers
 import ItemsDetailContainers from './components/Itemsdetail/ItemsDetailContainer.jsx';
 import FormContact from './components/formulario/FormContact.jsx';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import CartWidget from './components/cart/CartWidget.jsx';
+import Cart from './components/cart/Cart.jsx';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/item/:id" element ={<ItemsDetailContainers/>}/>
           <Route path="/category/:categoria" element ={<ItemsListContainers/>}/>
           <Route path="/form" element ={<FormContact/>}/>
-          <Route path="/cart" element ={<CartWidget/>}/>
+          <Route path="/cart" element ={<Cart/>}/>
         </Routes>
       </BrowserRouter>
     </div>
