@@ -14,8 +14,7 @@ function Items({id, items}) {
           <h5>$ {items.precio}</h5>
           
         </div>
-        <Link className="vermas" to={`/item/${id}`}>ver mas</Link>
-          
+        <Link className="vermas" to={`/item/${id}`}>ver mas</Link>  
       </div>
     );
 }

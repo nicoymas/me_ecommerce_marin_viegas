@@ -16,20 +16,20 @@ function ItemCount(props) {
     cantidad > 1 ? setCantidad(cantidad - 1) : setCantidad(1);
   };
 
-  const onAdd = () => {
-    alert(`Agregaste ${cantidad} unidades de ${props.data}`);
-  };
+  const handleClick = () => {
+    props.onAdd(cantidad);
+  }
   
   return (
     <>
         
         
-        <button className="btn-decrement" onClick={handleDecrement}>-</button>
-        
-        <h4 className="text-center" >{cantidad}</h4>
-        
-        <button className="btn-increment" onClick={handleIncrement}>+</button>
-        <button className="btn-onAdd" onClick={onAdd}>Compra</button>
+      <button className="btn-decrement" onClick={handleDecrement}>-</button>
+      
+      <h4 className="text-center" >{cantidad}</h4>
+      
+      <button className="btn-increment" onClick={handleIncrement}>+</button>
+      <button className="btn-onAdd" onClick={handleClick}>{props.text}</button>
     
           
     </>

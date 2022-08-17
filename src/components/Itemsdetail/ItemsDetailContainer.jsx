@@ -9,7 +9,7 @@ import {useParams} from "react-router-dom";
 function ItemsDetailContainers() {
   const {id} = useParams()
   const [data, setData] = useState([]);
-  console.log(id)
+ 
   function GetPlantasDetail (){
     return new Promise((resolve) => {
       let ItemRecuest= DataPlantas.find(item => item.id === id);

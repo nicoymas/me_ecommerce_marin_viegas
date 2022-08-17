@@ -1,8 +1,15 @@
-import React from "react";
+import React , {useState}from "react";
 import "./ItemsDetail.css";
 import ItemCount from "../ItemsContainer/ItemsCount/ItemsCount.jsx";
+import {NavLink} from "react-router-dom";
 
 function ItemsDetail({name, description, precio, img, stock}) {
+  const [InCart,setInCart] =useState(0);
+
+  function handleAdd(Cant) {
+    setInCart(Cant);
+    
+  }
     
     return (
     <div>    
@@ -26,7 +33,10 @@ function ItemsDetail({name, description, precio, img, stock}) {
             </div>
           </div>
         </div>
-        <ItemCount stock ={stock} initial={1} data={name}/>  
+        {InCart === 0 ?<ItemCount stock ={stock} initial={1} data={name} onAdd={handleAdd} text ="finalizar compra"/> 
+        :
+        <NavLink className="card" to={"/cart"}>ver carrito</NavLink> }
+        
     </div>
     );
 }

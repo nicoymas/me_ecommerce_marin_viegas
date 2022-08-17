@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 function NavBar() {
     let LinkActive = {
-        color: "black",
+        color: "green",
     };
     return(
         <nav className="ContainerNav">
@@ -25,6 +25,10 @@ function NavBar() {
                     <li><NavLink 
                         style={({isActive})=>(isActive?LinkActive: undefined)}
                         to={"/category/interior"}>interior</NavLink>
+                    </li>
+                    <li><NavLink 
+                        style={({isActive})=>(isActive?LinkActive: undefined)}
+                        to={"/form"}>Contacto</NavLink>
                     </li>
                 </ul>
                 <CartWidget />
