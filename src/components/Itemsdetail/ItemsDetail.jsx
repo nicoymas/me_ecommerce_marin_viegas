@@ -2,17 +2,21 @@ import React , {useState}from "react";
 import "./ItemsDetail.css";
 import ItemCount from "../ItemsContainer/ItemsCount/ItemsCount.jsx";
 import {NavLink} from "react-router-dom";
+import {useContext} from "react"
+import {CartContext} from "../../context/CartContext.jsx";
 
-function ItemsDetail({name, description, precio, img, stock}) {
+function ItemsDetail({id, name, description, precio, img, stock}) {
+  const {addToCart}= useContext(CartContext)
   const [InCart,setInCart] =useState(0);
 
-  function handleAdd(Cant) {
-    setInCart(Cant);
-    
+  function handleAdd(quantity) {
+    const itemToCart = { id,name, description, precio, img, stock}
+    addToCart(itemToCart,quantity)
+    setInCart(quantity); 
   }
     
     return (
-    <div>    
+    <div>   
         <div className="container-detail">
           <div className="d-img">
             <img src={img} alt="" className="detail-img" />

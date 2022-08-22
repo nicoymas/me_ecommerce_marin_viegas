@@ -28,6 +28,7 @@ function ItemsDetailContainers() {
     <div>
       <ItemsDetail 
         key={data.id}
+        id={data.id}
         name={data.name}
         description={data.description}
         precio={data.precio}

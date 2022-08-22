@@ -3,7 +3,6 @@ import "./ItemsCount.css";
 
 function ItemCount(props) {
   
-  
   const [cantidad , setCantidad] = useState(1); /* hook de estado */
 
   const handleIncrement = () => {

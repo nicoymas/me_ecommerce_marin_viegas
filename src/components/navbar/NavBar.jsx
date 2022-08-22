@@ -30,6 +30,11 @@ function NavBar() {
                         style={({isActive})=>(isActive?LinkActive: undefined)}
                         to={"/form"}>Contacto</NavLink>
                     </li>
+                    <li><NavLink 
+                        style={({isActive})=>(isActive?LinkActive: undefined)}
+                        to={"/cart"}>Carrito</NavLink>
+                    </li>
+                    
                 </ul>
                 <CartWidget />
 
