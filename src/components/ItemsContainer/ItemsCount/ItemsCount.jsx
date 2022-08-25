@@ -14,6 +14,7 @@ function ItemCount(props) {
   const handleDecrement = () => {
     cantidad > 1 ? setCantidad(cantidad - 1) : setCantidad(1);
   };
+  
 
   const handleClick = () => {
     props.onAdd(cantidad);

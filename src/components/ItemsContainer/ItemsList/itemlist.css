@@ -1,0 +1,19 @@
+.ItemsList{
+    margin: 100px ;
+    width: 90%;
+    height: 200%;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+   
+    border-radius: 5%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+
+    
+}

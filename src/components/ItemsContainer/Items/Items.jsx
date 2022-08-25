@@ -11,7 +11,7 @@ function Items({id, items}) {
         </div>
         <div className="card-detail">
           <h5>{items.name}</h5>
-          <p className="description">{items.description}</p>
+          
           <h5>$ {items.precio}</h5>
           
         </div>

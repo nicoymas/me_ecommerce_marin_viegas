@@ -1,9 +1,10 @@
 import React from "react";
 import Items from "../Items/Items.jsx";
+import "./itemlist.css"
 function ItemsList(props) {
   
   return (
-    <div >
+    <div className="ItemsList" >
         {props.data.map((planta) =>   
             
             <Items

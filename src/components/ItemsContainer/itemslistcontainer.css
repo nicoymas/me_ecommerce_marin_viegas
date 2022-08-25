@@ -3,9 +3,9 @@
     margin: 0
 }
 .greeting{
-    position: absolute;
-    margin:   5em;
-    padding: 2em 4em;
+    
+    margin:   1em;
+    padding: 0;
     width: 299%;
     color:rgb(54, 145, 95);
     font-size: 2.2em;

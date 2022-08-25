@@ -32,7 +32,7 @@ function ItemsListContainers(props) {
   },);
   
   return (
-    <div className="greeting">{props.greeting}
+    <div >
       <ItemsList data={data}/>
     </div>
   );
