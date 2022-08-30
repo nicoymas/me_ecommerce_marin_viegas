@@ -7,7 +7,7 @@ import FormContact from './components/formulario/FormContact.jsx';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Cart from './components/Carts/Cart.jsx';
 import {CartProvider} from './context/CartContext.jsx';
-
+// import database from "./services/firebase"
 function App() {
   return (
     <div>
