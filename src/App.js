@@ -8,10 +8,14 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Cart from './components/Carts/Cart.jsx';
 import {CartProvider} from './context/CartContext.jsx';
 // import database from "./services/firebase"
+// import {guardarPlantas} from "./services/firebase"
+
+
 function App() {
   return (
     <div>
       <BrowserRouter>
+        {/* <button onClick={() =>guardarPlantas()}> enviar datos</button> */}
         <CartProvider>
           <NavBar/>
           <Routes>

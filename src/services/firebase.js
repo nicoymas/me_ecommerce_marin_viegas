@@ -1,5 +1,6 @@
-
+// import DataPlantas from "../components/data/Data";
 import { initializeApp } from "firebase/app";
+// import {collection, getFirestore, addDoc} from "firebase/firestore";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
@@ -14,4 +15,15 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const database= getFirestore(app)
+
+// export async function guardarPlantas(){
+//   const plantasColection = collection(database,"Plantas");
+  
+//   for (let i of DataPlantas){
+//     const RespPlantas =await  addDoc(plantasColection, i);
+    
+//   } 
+// }
+
 export default database;
+

@@ -15,7 +15,7 @@ function GetPlantasDetail (id){
     const DocRef =doc(Plantasdetaill,id);
   
     getDoc(DocRef).then(snaphot => {
-      console.log(snaphot)
+      
       resolve(
         {...snaphot.data(), id: snaphot.id}
       )

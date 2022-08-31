@@ -25,6 +25,8 @@ export function CartProvider ({children}){
         setInCart(ItemsInCart.filter(itemCart => itemCart.id === id))
     }
     
+    
+    
     return(
         <CartContext.Provider value ={{ItemsInCart, addToCart,removeItem,Clear}}>
             {children} 

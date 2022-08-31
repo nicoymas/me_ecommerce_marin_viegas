@@ -1,9 +1,9 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './cart.css';
-import {useContext} from "react"
 import {CartContext} from "../../context/CartContext.jsx";
 import VistaCart from './VistaCart';
 import {NavLink} from "react-router-dom";
+import FormContact from "../formulario/FormContact"
 
 
 function Cart() {
@@ -15,14 +15,18 @@ function Cart() {
         TotalCart+=items.count*items.precio)
     
     return(
-        <div >
+        < >
+            
             {
+              
             ItemsInCart.map(items=>(
                 <VistaCart
                 key={items.id}
                 id ={items.id}
                 items={items}
+               
                 />
+                
             ))
             }
             {
@@ -34,13 +38,14 @@ function Cart() {
             </div>   
             :
             <div>
+                <FormContact datacart={ItemsInCart} totalcart={TotalCart} />
                 <button  onClick={()=>{Clear(ItemsInCart)}}>eliminar</button>
                 <h2>
                 {TotalCart}
                 </h2>
             </div>
             }
-        </div>
+        </>
     )
     
 }export default Cart

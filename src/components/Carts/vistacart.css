@@ -39,3 +39,17 @@
     color: #333;
     margin-bottom: 10px;
 }
+
+
+.btn-elim{
+  width: 100%;
+  background: rgb(41, 128, 38);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid rgb(157, 240, 154);
+  font-family: "calibri";
+  font-size: 18px;
+  font-style: italic;
+  color: #fff;
+}
