@@ -16,17 +16,13 @@ function Cart() {
     
     return(
         < >
-            
             {
-              
             ItemsInCart.map(items=>(
                 <VistaCart
                 key={items.id}
                 id ={items.id}
                 items={items}
-               
-                />
-                
+                />  
             ))
             }
             {
@@ -46,6 +42,5 @@ function Cart() {
             </div>
             }
         </>
-    )
-    
+    ) 
 }export default Cart
