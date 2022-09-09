@@ -7,9 +7,10 @@
  
  # ReactJs : JSX & Transpiling, Componentes, Hooks, Promises, asincronía, MAP, routing, context...
 
-# dependencias
 
-### "bootstrap": "^5.2.0",
+
+### dependencias 
+    "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "firebase": "^9.9.3",
     "react": "^18.2.0",
