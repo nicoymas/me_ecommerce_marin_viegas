@@ -1,3 +1,13 @@
+# Ecommerce React
+ proyecto de ecommerce desarrollado en react
+ -listado de productos
+ -detalle
+ -categorias
+ -carrito con formulario de confirmacion
+ 
+ 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
