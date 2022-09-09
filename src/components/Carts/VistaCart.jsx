@@ -17,7 +17,7 @@ function VistaCart({id, items}) {
         <h5>$ {items.precio* items.count}</h5>
       </div>
       <div>
-        <button  onClick={()=>{removeItem(id)}}>eliminar</button>
+        <button  className="btn_delete" onClick={()=>{removeItem(id)}}>eliminar</button>
       </div>
   </div>
     );

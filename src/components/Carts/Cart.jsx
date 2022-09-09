@@ -34,11 +34,11 @@ function Cart() {
             </div>   
             :
             <div>
-                <FormContact datacart={ItemsInCart} totalcart={TotalCart} />
-                <button  onClick={()=>{Clear(ItemsInCart)}}>eliminar</button>
                 <h2>
-                {TotalCart}
+                precio total: ${TotalCart}
                 </h2>
+                <button className='btn_delet' onClick={()=>{Clear(ItemsInCart)}}>eliminar productos</button>
+                <FormContact datacart={ItemsInCart} totalcart={TotalCart} />
             </div>
             }
         </>
