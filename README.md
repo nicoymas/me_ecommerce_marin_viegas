@@ -5,7 +5,7 @@
  -categorias
  -carrito con formulario de confirmacion
  
- # ReactJs : JSX & Transpiling, Componentes, Hooks, Promises, asincronía, MAP, routing...
+ # ReactJs : JSX & Transpiling, Componentes, Hooks, Promises, asincronía, MAP, routing, context...
 
 
 # Getting Started with Create React App
